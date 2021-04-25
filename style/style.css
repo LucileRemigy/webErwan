@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+body {
+  font-family: "Dancing Script", cursive;
+  background-color: pink;
+  margin: 0;
+}
+
+header {
+  z-index: 1;
+  margin: 0;
+}
+header .navbar {
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+}
+header .navbar > * {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+header .navbar h1 {
+  text-align: center;
+  z-index: 3;
+  min-width: 400px;
+}
+header .navbar nav {
+  z-index: 4;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(255, 236, 250, 0);
+  padding: 40px 0;
+}
+header .navbar nav .navbtn {
+  margin-right: 20px;
+  height: 20px;
+  color: rgba(0, 0, 0, 0.571);
+  transition-duration: 0.1s;
+  transition-property: color, border-bottom;
+  min-width: 80px;
+}
+header .navbar nav .navbtn:hover {
+  color: black;
+  cursor: pointer;
+}
+
+section#obsh {
+  z-index: 0;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  display: flex;
+  justify-content: center;
+  margin-top: 160px;
+}
+section#obsh .img {
+  box-shadow: 0 0 60px black;
+  border-radius: 100%;
+  background-image: url(../img/tucoco.jpg);
+  background-position: center center;
+  width: 500px;
+  height: 500px;
+}
+
+.bgnav {
+  background: #ffecfa;
+  box-shadow: 0 2px 15px black;
+}
+
+main {
+  margin-top: 150px;
+}
+main div {
+  height: 1000px;
+}
+
+.none {
+  opacity: 0;
+}
+
+@media (max-width: 1000px) {
+  main h1 {
+    position: sticky;
+    top: 80px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
